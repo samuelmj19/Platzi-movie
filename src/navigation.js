@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', navigator, false)
 window.addEventListener('hashchange', navigator, false)
 
 function navigator() {
-    console.log({ location });
+    
 
     if (location.hash.startsWith('#trends')){
         trendsPage();
@@ -33,7 +33,7 @@ function navigator() {
 }
 
 function homePage(){
-    console.log('Home!!');
+    
 
     headerSection.classList.remove('header-container--long');
     headerSection.style.background = "";
@@ -55,7 +55,7 @@ function homePage(){
     getCategoriesMovies();
 }
 function trendsPage(){
-    console.log('Trends!!');
+    
 
     headerSection.classList.remove('header-container--long');
     headerSection.style.background = "";
@@ -76,7 +76,7 @@ function trendsPage(){
     getTrendingMovies()
 }
 function searchPage(){
-    console.log('Search!!');
+    
 
     headerSection.classList.remove('header-container--long');
     headerSection.style.background = "";
@@ -96,7 +96,7 @@ function searchPage(){
     getMoviesBySearch(query);
 }
 function moviePage(){
-    console.log('Movie!!');
+    
 
     headerSection.classList.add('header-container--long');
     headerSection.style.background = "";
@@ -118,7 +118,7 @@ function moviePage(){
     getRelatedMovie(movieId);
 }
 function categoryPage(){
-    console.log('Category!!');
+    
 
     headerSection.classList.remove('header-container--long');
     headerSection.style.background = "";

@@ -58,7 +58,7 @@ async function getTrendingMoviesPreview(){
     const movies = data.results;
     trendingMoviesPreviewList.scrollLeft = 0;
     createMovies(movies, trendingMoviesPreviewList);
-    console.log(movies)
+    
 }
 async function getTrendingMovies(){
     const {data} = await api('trending/movie/day')
